@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.40rem;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    margin-left: 1rem;
+}
+.navlist a{
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+.navlist a:hover{
+    scale: 1.5;
+}
+/* Header */
+header{
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header>h1{
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+}
+header>p{
+    margin-top: 2rem;
+    letter-spacing: 0.25rem;
+}
+/* About */
+.about{
+   text-align: center;
+   padding: 2rem;
+   line-height: 1.5;
+}
+.about p{
+    margin-top: 1rem;
+}
+/* Skills */
+.skills{
+    text-align: center;
+}
+.skills-logo{
+    margin: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+/* Work */
+.work{
+    background-color: whitesmoke;
+    text-align: center;
+    padding:2rem;
+    margin: 0 auto;
+}
+.work img:hover, .project h2:hover, .contact a:hover{
+    transform: scale(1.1);
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 3rem;
+}
+.project a{
+    text-decoration: none;
+    color: black;
+}
+.project h2{
+    margin-top: 2rem;
+}
+/* Footer */
+.contact{
+    text-align: center;
+    padding: 0.75rem;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+.contact a:hover{
+    transform: scale(1.1);
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.50rem 5rem;
+    margin-top: 1rem;
+}
+.icon>div:hover{
+transform: scale(1.1);
+}
+/* Media Queries */
+@media only screen and (max-width:375px){
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+.logo img{
+    width: 70px;
+    height: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.about p{
+    font-size: 11px;
+}
+.projects img{
+    width: 100%;
+    height: auto;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+}
