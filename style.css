@@ -95,7 +95,7 @@ header>p{
     border: 1px solid grey;
     background-color: whitesmoke;
     font-size: 1rem;
-    padding: 0.25rem;
+    padding: 0.30rem;
 }
 .contact a:hover{
     transform: scale(1.1);
@@ -117,7 +117,7 @@ body{
     margin: 0 auto;
 }
 .logo img{
-    width: 70px;
+    width: 100px;
     height: 30px;
 }
 .navbar{
